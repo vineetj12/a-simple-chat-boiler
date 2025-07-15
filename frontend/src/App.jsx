@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const ws = new WebSocket('ws://localhost:3000')
     ws.onopen = () => {
-      console.log("Connected")
+      console.log("Connected");
       setSocket(ws)
     }
 
